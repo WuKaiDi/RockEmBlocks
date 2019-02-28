@@ -8,3 +8,82 @@ a {text-decoration: none;}
 * html .clearfix {height: 1%;}
 * + html .clearfix {min-height: 1%;}
 body {margin: auto;width: 100%;height: 100%;position: absolute;}
+img{-webkit-user-select:none;-webkit-touch-callout:none;}
+.box {width: 100%;height: 100%;position: absolute;top: 0px;left: 0px;}
+.rightbox{width: 100%;height: 100%;position: absolute;margin: 0px;padding: 0px;text-align: left;overflow: hidden;z-index: 9}
+.all_click{width: 100%;height: 100%;position: absolute;margin: 0px;padding: 0px;text-align: left;overflow: hidden;}
+.hide{display: none;}
+.opacHide{opacity: 0;}
+.z1{z-index: 9;}
+.z2{z-index: 99;}
+/*general*/
+.layout{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.logo  {width: 15%;top: 20px;left: 20px;position: absolute;z-index: 99;}
+/*readyGame*/
+.mainScene{background: url("images/mainBg.png") no-repeat;background-size: 100% 100%;z-index: 1}
+.sceneBg{width: 50%;left: 25%;top: -24%;margin: 0;padding: 0;position: absolute;z-index: 1;}
+.scene_img1{width: 9.5%;left: 57%;position: absolute;z-index: 2;}
+.scene_img2{width: 8%;top: 6%;left: 44%;position: absolute;z-index: 2;}
+.scene_img3{width: 8%;top: 9%;left: 38%;position: absolute;z-index: 2;}
+.scene_img4{width: 8%;top: 10%;left: 33%;position: absolute;z-index: 3;}
+.scene_txt {width: 45%;top: 21%;left: 27.5%;position: absolute;z-index: 4}
+.scene_mark{width: 3%;top: 21.5%;left: 44.5%;position: absolute;z-index: 5;}
+
+.chessBg {width: 75%;top:33%;left: 12.5%;position: absolute;}
+.chessBoard{width: 75%;height:56%;top:33%;left: 12.5%;position: absolute;padding: 0px;margin: 0px;}
+.chessCont   {background: url("images/chessBg.png") no-repeat;background-size: 100% 100%;position: relative;width: 100%;height: 100%;z-index: 99;}
+.chess   {position: absolute;left: 4.5px;top: 4.5px;overflow: hidden;width: 99%;height: 95.7%;}
+.chessMan  {position: absolute;width: 8.33%;height: 16.66%}
+.chessPiece_1{background: url("images/c1.png") no-repeat;background-size: 100% 100%;}
+.chessPiece_2{background: url("images/c2.png") no-repeat;background-size: 100% 100%;}
+.chessPiece_3{background: url("images/c3.png") no-repeat;background-size: 100% 100%;}
+.chessPiece_4{background: url("images/c4.png") no-repeat;background-size: 100% 100%;}
+.chessPiece_5{background: url("images/c5.png") no-repeat;background-size: 100% 100%;}
+.chessPiece_6{background: url("images/c6.png") no-repeat;background-size: 100% 100%;}
+.boom{background: url("images/boom.png") no-repeat !important;background-size: 100% 100% !important;-webkit-animation: boom 0.4s;-webkit-animation-fill-mode:forwards;}
+@keyframes boom{
+      0%{-webkit-transform:scale(0.1,0.1);}
+    100%{-webkit-transform:scale(1,1);}
+}
+.img_skew{-webkit-animation: img_skew 1s linear infinite alternate;transform-origin:center bottom;}
+@keyframes img_skew{
+      0%{-webkit-transform:skewX(5deg)}
+    100%{-webkit-transform:skewX(-5deg)}
+}
+.bg_click{z-index: 66;}
+.gameOver,.startGame{background: rgba(0,0,0,0.5);z-index: 999;}
+.ok_img{width: 50%;left: 25%;position: absolute;}
+.ok_txt1{width: 70%;left: 15%;bottom: 30%;position: absolute;}
+.ok_txt2{width: 61%;left: 20%;bottom: 20%;position: absolute;}
+.ok_button{width: 30%;left: 35%;bottom: 3%;position: absolute;}
+.ok_time{width: 6%;left: 48.6%;bottom: 17%;position: absolute;}
+
+.upTime{position: absolute;font-size: 12px;color: #fff;font-weight: 800;left: 3%;top: 25%;z-index: 999;font-family: “黑体”;}
+.upTimes{transform:scale(0.7,0.7);top: 25%;left: 0%;}
+.close{position: absolute;left: 5%;top: 33%;width: 5%;z-index: 999;}
+.cloud1{width: 30%;left: 0%;position: absolute;top: 38%;opacity: 0;}
+.cloud2{width: 50%;right: 0%;position: absolute;top: 50%;opacity: 0}
+.stratTxt1{width: 34%;left: 33%;position: absolute;top: 74%;opacity: 0;}
+.stratTxt2{width: 20%;left: 40%;position: absolute;top: 46%;opacity: 0;}
+.hand{position: absolute;left: 12.15%;top: 9.5%;z-index: 99;width: 3%;-webkit-animation: hand 0.8s linear infinite alternate;}
+.stratTxts_1{-webkit-animation: stratTxts_1 0.4s linear infinite alternate;}
+.stratTxts_2{-webkit-animation: stratTxts_2 0.2s linear;-webkit-animation-fill-mode:forwards;}
+@-webkit-keyframes stratTxts_1{
+      0%{opacity: 0;}
+    100%{opacity: 1}
+}
+@-webkit-keyframes stratTxts_2{
+      0%{-webkit-transform:scale(1.5,1.5);opacity: 0;}
+    100%{-webkit-transform:scale(1,1);opacity: 1}
+}
+
+@-webkit-keyframes hand{
+      0%{left: 12.15%;}
+    100%{left: 4.15%}
+}
+@media screen and (max-width: 1025px) and (min-height: 768px){
+    .stratTxt1{top: 67%;}
+    .sceneBg{top: -18%;}
+    .upTime{top: 18%;font-size: 18px}
+    .close{top: 22%;left: 6%;}
+}
